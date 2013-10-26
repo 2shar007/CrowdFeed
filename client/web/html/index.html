@@ -24,6 +24,11 @@
       $( document ).ready(function() {
         $( "#btn-give" ).click(function() {
           $(".food-form").css("visibility","visible");
+          $(".receive-page").css("visibility","hidden");
+        });
+        $( "#btn-receive" ).click(function() {
+          $(".food-form").css("visibility","hidden");
+          $(".receive-page").css("visibility","visible");
         });
         $( ".btn-submit" ).click(function() {
           alert("Thank you! You helped another person smile today!")
@@ -43,13 +48,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CrowdFeed</a>
+          <a class="navbar-brand" href="index.html">GiveMyFood</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -58,15 +63,24 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>CrowdFeed</h1>
+        <h1>Give My Food</h1>
         <p class="lead"> Stop wasting your food and give it to someone who is hungry !!
       </div>
 
     </div><!-- /.container -->
 
     <div class="coa btn">
-      <button>TAKE</button>
       <button id="btn-give">GIVE</button>
+      <button id="btn-receive">RECEIVE</button>
+    </div>
+    <div class="receive-page">
+      <ul class="list-group">
+        <li class="list-group-item">1kg of apples in New York</li>
+        <li class="list-group-item">500g of Couscous in Paris</li>
+        <li class="list-group-item">3 steaks in Madrid</li>
+        <li class="list-group-item">10 potatoes in Bamako</li>
+        <li class="list-group-item">1 eggplant in Abbu Dhabi</li>
+      </ul>
     </div>
     <div class="food-form">
       <form class="form-horizontal">

@@ -19,9 +19,29 @@ body {
     margin-right: 0;
 }
 .food-form {
+	margin-top: 10px;
 	margin-left: 23%;
 	visibility: hidden;
 }
 .btn-submit{
 	margin-left:53%;
+}
+.receive-page {
+	margin-top: 10px;
+	margin-left: 23%;
+	visibility: hidden;
+}
+
+.list-group-item {
+	width: 600px;
+	text-align: center;
+}
+
+.team {
+	margin-left: 190px;
+}
+
+.social {
+	margin-top: 10px;
+	margin-left: 23%;
 }
