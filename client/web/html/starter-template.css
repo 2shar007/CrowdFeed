@@ -14,3 +14,14 @@ body {
 	height: 100px;
 	width: 100px;
 }
+.form-inline .form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+.food-form {
+	margin-left: 23%;
+	visibility: hidden;
+}
+.btn-submit{
+	margin-left:53%;
+}
