@@ -23,12 +23,12 @@
     <script type="text/javascript">
       $( document ).ready(function() {
         $( "#btn-give" ).click(function() {
-          $(".food-form").css("visibility","visible");
-          $(".receive-page").css("visibility","hidden");
+          $(".food-form").show();
+          $(".receive-page").hide();
         });
         $( "#btn-receive" ).click(function() {
-          $(".food-form").css("visibility","hidden");
-          $(".receive-page").css("visibility","visible");
+          $(".food-form").hide();
+          $(".receive-page").show();
         });
         $( ".btn-submit" ).click(function() {
           alert("Thank you! You helped another person smile today!")
@@ -132,7 +132,7 @@
             </div>
         </div>     
         <button type="submit" class="btn btn-default btn-submit">Submit a Smile :-)</button>   
-        <a id="twitter-submit" href="#" target="_blank"> Send food with my Twitter account </a> 
+        <button type="button" class="btn btn-default" id="twitter-submit"> Tweet a Smile :-) </a> 
       </form>
     </div>
     <!-- Bootstrap core JavaScript
