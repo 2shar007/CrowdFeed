@@ -32,7 +32,17 @@
         });
         $( ".btn-submit" ).click(function() {
           alert("Thank you! You helped another person smile today!")
-        });        
+
+        });      
+        $( "#twitter-submit" ).click(function() {
+          var formData=$('form').serializeArray();
+          
+          var text = formData[1].value + " "+formData[0].value + " in " +formData[4].value +", Best by " + formData[3].value;
+          var hashtags=formData[5].value;
+          hashtags=hashtags.split(/[ ,]+/).filter(function(v){return v!==''}).join(',')
+          var twitterUrl="https://twitter.com/intent/tweet?text="+text+"&hashtags= "+hashtags;
+          window.open(twitterUrl,'GiveMyFood',width=600,height=300); return false;
+        });
       });
 
     </script>
@@ -122,8 +132,7 @@
             </div>
         </div>     
         <button type="submit" class="btn btn-default btn-submit">Submit a Smile :-)</button>   
-        <a href="https://twitter.com/intent/tweet?text=Give My Food&amp;hashtags=swunesco"
-           target="_blank"> Send food with my Twitter account </a> 
+        <a id="twitter-submit" href="#" target="_blank"> Send food with my Twitter account </a> 
       </form>
     </div>
     <!-- Bootstrap core JavaScript
